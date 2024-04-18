@@ -12,11 +12,16 @@ def main(argv: Sequence[str] | None = None):
         help='Branch regexp',
         required=True
     )
-    parser.add_argument('message') 
+    parser.add_argument('message_file') 
     args = parser.parse_args(argv)
 
     pattern = re.compile(args.regexp)
-    message = args.message
+    
+    with open(args.message_file) as f:
+        contents = f.readlines()
+
+    message = " ".join(contents)
+    print(message)
     
     print(f"We match pattern {pattern} with message commit '{message[:5]}...'.")
 
