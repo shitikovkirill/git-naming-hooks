@@ -1,8 +1,8 @@
 repos:
 -   repo: https://git.webwave.work/Common/git-naming-hooks.git
-    rev: b5270f8bee92dec742d92f2050d7aab972b02443
+    rev: 3efe60a045e2afb83b2e081dcd438a8a43daf257
     hooks:
     -   id: check-git-commit
-        args: [-r, '^test?']
+        args: [-r, '^test2?']
     -   id: check-git-branch
-        args: [-r, '^(AGG|Agg|agg)-[0-9]+((_|\/)[\w\-_]+)?']
+        args: [-r, '^test2?']
