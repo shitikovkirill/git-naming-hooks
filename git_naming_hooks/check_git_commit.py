@@ -1,4 +1,4 @@
-print("xxxxxxxxxx")
+import sys
 
 def main():
-    print("cccccc")
+    print(sys.argv[:])

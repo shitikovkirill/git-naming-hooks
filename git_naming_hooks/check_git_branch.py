@@ -1,4 +1,4 @@
-print("ffffffff")
+import sys
 
 def main():
-    print("ffffffff")
+    print(sys.argv[:])

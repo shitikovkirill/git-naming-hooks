@@ -4,11 +4,11 @@
     entry: check-git-commit
     language: python
     types: [text]
-    stages: [commit, push, manual]
+    stages: [commit-msg]
 -   id: check-git-branch
     name: Check git branch
     description: Check git branch by pattern.
     entry: check-git-branch
     language: python
     types: [text]
-    stages: [commit, push, manual]
+    stages: [pre-commit]
