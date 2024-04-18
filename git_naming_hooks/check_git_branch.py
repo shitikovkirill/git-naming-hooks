@@ -1,6 +1,6 @@
 import argparse
 import os
-import sys
+import re
 from typing import Sequence
 
 
@@ -15,9 +15,11 @@ def main(argv: Sequence[str] | None = None):
     args = parser.parse_args(argv)
 
     branch = os.popen("git rev-parse --abbrev-ref HEAD").read()
-    print(branch)
-    print(args)
-    print(sys.argv[:])
+    pattern = re.compile(args.regexp)
+
+    match = re.search(pattern, branch)
+    if match:
+        return 0
     return 1
     
 if __name__ == '__main__':
