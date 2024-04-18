@@ -1,7 +1,7 @@
 repos:
 -   repo: https://git.webwave.work/Common/git-naming-hooks.git
-    rev: ea0e9a7d05a07c149acbf6edc3dcd17014e802cd
+    rev: 5dd54f0f6e259a6ab9b2f2dda34f98656a1ad0de
     hooks:
     -   id: check-git-commit
-        args: [--py38-plus, --add-import, 'from __future__ import annotations']
     -   id: check-git-branch
+        args: [-r, '^(AGG|Agg|agg)-[0-9]+((_|\/)[\w\-_]+)?']
