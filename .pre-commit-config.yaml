@@ -3,5 +3,6 @@ repos:
     rev: b5270f8bee92dec742d92f2050d7aab972b02443
     hooks:
     -   id: check-git-commit
+        args: [-r, '^test?']
     -   id: check-git-branch
         args: [-r, '^(AGG|Agg|agg)-[0-9]+((_|\/)[\w\-_]+)?']
