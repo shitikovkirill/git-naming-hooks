@@ -21,9 +21,8 @@ def main(argv: Sequence[str] | None = None):
         contents = f.readlines()
 
     message = " ".join(contents)
-    print(message)
     
-    print(f"We match pattern {pattern} with message commit '{message[:5]}...'.")
+    print(f"We match pattern {pattern} with message commit '{message[:10]}...'.")
 
     match = re.search(pattern, message)
     if match:
