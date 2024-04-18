@@ -3,4 +3,5 @@ repos:
     rev: 09a21ba4c640ed1366246c7430bd19c65b343414
     hooks:
     -   id: check-git-commit
+        args: [--py38-plus, --add-import, 'from __future__ import annotations']
     -   id: check-git-branch
