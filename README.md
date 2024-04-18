@@ -1,0 +1,1 @@
+# Git naming hooks
