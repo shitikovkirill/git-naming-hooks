@@ -1,6 +1,6 @@
 repos:
 -   repo: https://git.webwave.work/Common/git-naming-hooks.git
-    rev: 09a21ba4c640ed1366246c7430bd19c65b343414
+    rev: ea0e9a7d05a07c149acbf6edc3dcd17014e802cd
     hooks:
     -   id: check-git-commit
         args: [--py38-plus, --add-import, 'from __future__ import annotations']
