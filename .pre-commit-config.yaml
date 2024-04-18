@@ -1,6 +1,6 @@
 repos:
 -   repo: https://git.webwave.work/Common/git-naming-hooks.git
-    rev: 8036e73f117341b3029a2bf1a23433359b9ac3f4
+    rev: v0.1.0
     hooks:
     -   id: check-git-commit
         args: [-r, '^HOOK\-[0-9]+\: .+']
