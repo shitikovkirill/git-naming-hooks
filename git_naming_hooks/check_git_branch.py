@@ -17,7 +17,7 @@ def main(argv: Sequence[str] | None = None):
     pattern = re.compile(args.regexp)
     branch = os.popen("git rev-parse --abbrev-ref HEAD").read()
     
-    print(f"We match pattern '{pattern}' with branch '{branch}'.")
+    print(f"We match pattern {pattern} with branch '{branch}'.")
 
     match = re.search(pattern, branch)
     if match:
