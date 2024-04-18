@@ -1,0 +1,14 @@
+-   id: check-git-commit
+    name: Check git commit
+    description: Check git commit by pattern.
+    entry: check-git-commit
+    language: python
+    types: [text]
+    stages: [commit, push, manual]
+-   id: check-git-branch
+    name: Check git branch
+    description: Check git branch by pattern.
+    entry: check-git-branch
+    language: python
+    types: [text]
+    stages: [commit, push, manual]

@@ -1,0 +1,6 @@
+repos:
+-   repo: https://git.webwave.work/Common/git-naming-hooks.git
+    rev: main
+    hooks:
+    -   id: check-git-commit
+    -   id: check-git-branch
