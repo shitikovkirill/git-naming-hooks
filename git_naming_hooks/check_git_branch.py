@@ -14,12 +14,17 @@ def main(argv: Sequence[str] | None = None):
     )
     args = parser.parse_args(argv)
 
-    branch = os.popen("git rev-parse --abbrev-ref HEAD").read()
     pattern = re.compile(args.regexp)
+    branch = os.popen("git rev-parse --abbrev-ref HEAD").read()
+    
+    print(f"We match pattern '{pattern}' with branch '{branch}'.")
 
     match = re.search(pattern, branch)
     if match:
+        print("Branch is correct.")
         return 0
+    
+    print("Branch has not correct format.")
     return 1
     
 if __name__ == '__main__':
