@@ -13,3 +13,7 @@ python = "^3.11"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+check-git-commit = "git_naming_hooks.check_git_commit:main"
+check-git-branch = "git_naming_hooks.check_git_branch:main"
