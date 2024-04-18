@@ -1,6 +1,6 @@
 repos:
 -   repo: https://git.webwave.work/Common/git-naming-hooks.git
-    rev: 5dd54f0f6e259a6ab9b2f2dda34f98656a1ad0de
+    rev: 7511c67575ec39ea239c34b22219478ff2bf14c6
     hooks:
     -   id: check-git-commit
     -   id: check-git-branch
