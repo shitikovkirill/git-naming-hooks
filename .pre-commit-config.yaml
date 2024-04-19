@@ -21,7 +21,7 @@ repos:
     -   id: isort
         args: ["--profile", "black"]
 -   repo: https://git.webwave.work/Common/git-naming-hooks.git
-    rev: v0.1.0
+    rev: v0.1.1
     hooks:
     -   id: check-git-commit
         args: [-r, '^HOOK\-[0-9]+\: .+']

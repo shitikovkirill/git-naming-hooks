@@ -5,7 +5,6 @@
     language: python
     types: [text]
     stages: [commit-msg]
-    verbose: true
 -   id: check-git-branch
     name: Check git branch
     description: Check git branch by pattern.
@@ -13,4 +12,3 @@
     language: python
     types: [text]
     stages: [pre-commit]
-    verbose: true
