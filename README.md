@@ -7,7 +7,7 @@ This hooks  which check branch name format and commit name format in git.
 ```yaml
 repos:
 -   repo: https://github.com/shitikovkirill/git-naming-hooks.git
-    rev: v0.1.0
+    rev: v0.1.2
     hooks:
     -   id: check-git-commit
         args: [-r, '^HOOK\-[0-9]+\: .+']
