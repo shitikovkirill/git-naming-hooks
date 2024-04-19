@@ -1,6 +1,8 @@
 # Git naming hooks
 
-## Example of pattern 
+This hooks  which check branch name format and commit name format in git.
+
+## Example of usage
 
 ```yaml
 repos:
@@ -13,7 +15,10 @@ repos:
         args: [-r, '^(HOOK|Hook|hook)-[0-9]+((_|\/)[\w\-_]+)?']
 ```
 
-## Install pre-commit
+## Install commit-msg hook
+
+NOTE: For running check commit message hook need run this command.
+
 ```bash
-pre-commit install --install-hooks -t pre-commit -t commit-msg
+pre-commit install --install-hooks -t commit-msg
 ```
